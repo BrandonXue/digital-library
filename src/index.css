@@ -1,13 +1,40 @@
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(10px + 1vmin);
+  background-color: #a8d0e6;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 8vmin;
+}
+
+h2 {
+  font-size: 7vmin;
+}
+
+h3 {
+  font-size: 6vmin;
+}
+
+h4 {
+  font-size: 5vmin;
+}
+
+h5 {
+  font-size: 4vmin;
+}
+
+h5 {
+  font-size: 3vmin;
+}
+
+h6 {
+  font-size: 2vmin;
 }

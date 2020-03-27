@@ -1,0 +1,10 @@
+.App-footer {
+    background-color: #24305e;
+    min-height: 8vh;
+    font-size: 2vmin;
+    color: #ffffff;
+
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
