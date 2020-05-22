@@ -1,9 +1,16 @@
 .App {
+  display: grid;
+  grid-template-rows: 20vh auto 20vh;
   text-align: center;
   position: relative;
   min-height: 100vh;
+  align-content: center;
 }
 
 .App-link {
   color: #ffffff;
+}
+
+.Bookcase {
+  align-self: center;
 }
