@@ -1,8 +1,8 @@
 .App-header {
-    position: absolute;
+    position: relative;
     width: 100vw;
 
-    background-color: #24305e;
+    background-color:#29648A;
     min-height: 10vh;
     display: flex;
     flex-direction: row;

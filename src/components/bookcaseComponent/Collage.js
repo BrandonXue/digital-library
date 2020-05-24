@@ -1,24 +1,23 @@
 import React from 'react';
-import Book from './Book.js';
-import './Bookcase.css';
+import Book from './CollageItem.js';
+import './Collage.css';
 
-class Bookcase extends React.Component {
+class Collage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            bookList: props.bookList,
+            media: props.media,
             startIndex: 0,
         };
-        
     }
 
     renderBook(i) {
         let title = "", author = "";
-        const books = this.state.bookList;
-        if (books.length > i) {
-            const book = books[i];
-            title = book.title;
-            author = book.author;
+        const media = this.state.media;
+        if (media.length > i) {
+            const mediaItem = media[i];
+            title = mediaItem.title;
+            author = mediaItem.author;
         }
         return (
             <Book title={title} author={author}/>
@@ -29,7 +28,7 @@ class Bookcase extends React.Component {
         let start = this.state.startIndex;
 
         return (
-            <div className="bookShelf">
+            <div className="mosaic">
                 <div className="shelfRow">
                     {this.renderBook(start)}
                     {this.renderBook(start+1)}
@@ -51,4 +50,4 @@ class Bookcase extends React.Component {
     }
 }
 
-export default Bookcase;
+export default Collage;

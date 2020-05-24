@@ -2,12 +2,43 @@ import React from 'react';
 import './App.css';
 import Header from './components/headerComponent/Header';
 import Footer from './components/footerComponent/Footer';
-import Bookcase from './components/bookcaseComponent/Bookcase';
+import Collage from './components/bookcaseComponent/Collage';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { // Test data
+      music: [
+        {
+          title: "Never Gonna Give You Up",
+          artist: "Rick Astley",
+          album: "Never Gonna Give You Up (Pianoforte)",
+        },
+        {
+          title: "Sandstorm",
+          artist: "Darude",
+          album: "Sandstorm (The Remixes)",
+        },
+      ],
+      written: [
+        {
+          title: "The Cat in the Hat",
+          author: "Dr. Seuss",
+          publisher: "Random House",
+        },
+        {
+          title: "The Great Gatsby",
+          author: "F. Scott Fitzgerald",
+          publisher: "Charles Scribner's Sons",
+        },
+      ],
+    };
+  }
   
   render() {
-    let books = [
+    let musicList = this.state.music;
+    let writtenList = this.state.written;
+    let media = [
       {
         title: "title1",
         author: "author1",
@@ -45,7 +76,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header className='Header'/>
-        <Bookcase className='Bookcase' bookList={books}/>
+          <Collage className='Bookcase' media={media} music={musicList} written={writtenList}/>
         <Footer className='Footer'/>
       </div>
     );
