@@ -38,6 +38,10 @@ class Collage extends React.Component {
                 {this.renderTile(1, "5.85em", "6.67em", "#464866", testItem, testType)}
                 {this.renderTile(2, "5.85em", "6.67em", "#AAABB8", testItem2, testType)}
                 {this.renderTile(3, "5.85em", "6.67em", "#29648A", testItem2, testType)}
+                {this.renderTile(4, "5.85em", "6.67em", "#2E9CCA", testItem2, testType)}
+                {this.renderTile(5, "5.85em", "6.67em", "#AAABB8", testItem2, testType)}
+                {this.renderTile(6, "5.85em", "6.67em", "#29648A", testItem2, testType)}
+                {this.renderTile(7, "5.85em", "6.67em", "#464866", testItem2, testType)}
             </div>
         );
     }

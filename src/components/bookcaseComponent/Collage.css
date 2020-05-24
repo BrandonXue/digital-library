@@ -2,9 +2,9 @@
     display: grid;
     grid-template-rows: 19% 27% 28% 26%;
     grid-template-columns: 16% 22% 23% 20% 19%;
-    left: 0px;
-    right: 0px;
-    min-height: 500px;
+    margin-left: 10vw;
+    height: 80vw;
+    width: 80vw;
 
     grid-column-start: 2;
     grid-column-end: 4;

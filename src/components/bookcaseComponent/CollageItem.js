@@ -34,11 +34,13 @@ class CollageItem extends React.Component {
                 colStart = 3; colEnd = 5; rowStart = 1; rowEnd = 3;
                 break;
             case 5:
-                colStart = 1; colEnd = 2; rowStart = 1; rowEnd = 2;
+                colStart = 1; colEnd = 4; rowStart = 3; rowEnd = 6;
                 break;
             case 6:
+                colStart = 4; colEnd = 5; rowStart = 3; rowEnd = 4;
                 break;
             case 7:
+                colStart = 4; colEnd = 5; rowStart = 4; rowEnd = 5;
                 break;
             default:
                 break;
