@@ -1,15 +1,16 @@
 .App-header {
     position: relative;
+    top: 0;
     width: 100vw;
 
+    font-size: calc(10px + 2vmin);
+    color: #ffffff;
     background-color:#29648A;
-    min-height: 10vh;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: #ffffff;
   }
 
   .App-header-text {
