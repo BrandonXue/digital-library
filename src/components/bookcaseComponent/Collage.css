@@ -1,20 +1,11 @@
-.mosaic {
-    grid-row-start: 2;
-    grid-row-end: 3;
+.collage {
+    display: grid;
+    grid-template-rows: 19% 27% 28% 26%;
+    grid-template-columns: 16% 22% 23% 20% 19%;
+    left: 0px;
+    right: 0px;
+    min-height: 500px;
 
-    padding-top: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.shelfRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.buttons {
-    display: block;
-    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }

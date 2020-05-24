@@ -1,29 +1,23 @@
 .collageItem {
+    left: 12.48%;
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #FFFFFF;
-    min-width: 5em;
-    min-height: 5em;
-    width: 15vw;
-    height: 15vw;
-    margin: min(1vw, 1vh);
-
-    
 }
 
 .image {
     font-size: 1vw;
 
-    margin-top: 1vw;
-    height: 10vw;
-    width: 10vw;
+    margin-top: .5em;
+    height: 7em;
+    width: 7em;
 }
 
-.bookTitle {
-    font-size: 2vw;
+.title {
+    font-size: 1.2vw;
 }
 
-.bookAuthor {
-    font-size: 2vw;
+.author {
+    font-size: .8vw;
 }

@@ -1,50 +1,43 @@
 import React from 'react';
 import Book from './CollageItem.js';
 import './Collage.css';
+import CollageItem from './CollageItem.js';
 
 class Collage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             media: props.media,
+            music: props.music,
+            written: props.written,
             startIndex: 0,
         };
     }
 
-    renderBook(i) {
-        let title = "", author = "";
-        const media = this.state.media;
-        if (media.length > i) {
-            const mediaItem = media[i];
-            title = mediaItem.title;
-            author = mediaItem.author;
-        }
+    renderTile(tileNum, width, height, tileColor, mediaItem, mediaType) {
         return (
-            <Book title={title} author={author}/>
+            <CollageItem 
+                tileNum={tileNum}
+                width={width}
+                height={height}
+                tileColor={tileColor}
+                mediaItem={mediaItem}
+                mediaType={mediaType}
+            />
         );
     }
     
     render() {
-        let start = this.state.startIndex;
+        let testItem = this.state.music[0];
+        let testItem2 = this.state.music[1];
+        let testType = "music";
 
+        // 258 294
         return (
-            <div className="mosaic">
-                <div className="shelfRow">
-                    {this.renderBook(start)}
-                    {this.renderBook(start+1)}
-                    {this.renderBook(start+2)}
-                    {this.renderBook(start+3)}
-                </div>
-                <div className="shelfRow">
-                    {this.renderBook(start+4)}
-                    {this.renderBook(start+5)}
-                    {this.renderBook(start+6)}
-                    {this.renderBook(start+7)}
-                </div>
-                <div className="buttons">
-                    <button>Previous</button>
-                    <button>Next</button>
-                </div>
+            <div className="collage">
+                {this.renderTile(1, "5.85em", "6.67em", "#464866", testItem, testType)}
+                {this.renderTile(2, "5.85em", "6.67em", "#AAABB8", testItem2, testType)}
+                {this.renderTile(3, "5.85em", "6.67em", "#29648A", testItem2, testType)}
             </div>
         );
     }

@@ -8,15 +8,53 @@ class CollageItem extends React.Component {
 
 
     render() {
-        let title = this.props.title ? this.props.title : "[Book not found]";
-        let author = this.props.author ? this.props.author : "[Author not found]";
-        let color = this.props.color? this.props.color : "#999999";
+        let mediaItem = this.props.mediaItem;
+        let type = this.props.mediaType;
+        let title = "Unknown title", creator = "Unknown creator";
+        if (type == "music") {
+            title = mediaItem.title;
+            creator = mediaItem.artist;
+        } else if (type == "written") {
+            title = mediaItem.title;
+            creator = mediaItem.author;
+        }
+
+        let colStart = 1, colEnd = 1, rowStart = 1, rowEnd = 1;
+        switch (this.props.tileNum) {
+            case 1:
+                colStart = 1; colEnd = 2; rowStart = 1; rowEnd = 2;
+                break;
+            case 2:
+                colStart = 2; colEnd = 3; rowStart = 1; rowEnd = 2;
+                break;
+            case 3:
+                colStart = 2; colEnd = 2; rowStart = 2; rowEnd = 3;
+                break;
+            case 4:
+                colStart = 3; colEnd = 5; rowStart = 1; rowEnd = 3;
+                break;
+            case 5:
+                colStart = 1; colEnd = 2; rowStart = 1; rowEnd = 2;
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            default:
+                break;
+        }
         
         return (
-            <div className="collageItem" style={{backgroundColor: color}}>
+            <div className="collageItem" style={{
+                backgroundColor: this.props.tileColor,
+                gridColumnStart: colStart,
+                gridColumnEnd: colEnd,
+                gridRowStart: rowStart,
+                gridRowEnd: rowEnd,}}
+            >
                 <div className="image">placeholder</div>
-                <div className="bookTitle">{title}</div>
-                <div className="bookAuthor">{author}</div>
+                <div className="title">{title}</div>
+                <div className="author">{creator}</div>
             </div>
         );
     }
