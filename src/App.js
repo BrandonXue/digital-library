@@ -73,7 +73,7 @@ class App extends React.Component {
       },
     ];
 
-    return ( // Ernesto
+    return ( // Dog
       <div className="App">
         <Header className='Header'/>
           <Collage className='Mosaic' media={media} music={musicList} written={writtenList}/>
