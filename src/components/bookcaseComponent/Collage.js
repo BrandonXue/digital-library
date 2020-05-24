@@ -32,8 +32,7 @@ class Collage extends React.Component {
         let testItem2 = this.state.music[1];
         let testType = "music";
 
-        // 258 294
-        return (
+        return ( 
             <div className="collage">
                 {this.renderTile(1, "5.85em", "6.67em", "#464866", testItem, testType)}
                 {this.renderTile(2, "5.85em", "6.67em", "#AAABB8", testItem2, testType)}
@@ -43,6 +42,7 @@ class Collage extends React.Component {
                 {this.renderTile(6, "5.85em", "6.67em", "#29648A", testItem2, testType)}
                 {this.renderTile(7, "5.85em", "6.67em", "#464866", testItem2, testType)}
             </div>
+            
         );
     }
 }

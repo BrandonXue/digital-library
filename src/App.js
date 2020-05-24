@@ -75,9 +75,9 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Header className='Header'/>
-          <Collage className='Mosaic' media={media} music={musicList} written={writtenList}/>
-        <Footer className='Footer'/>
+        <Header/>
+        <Collage media={media} music={musicList} written={writtenList}/>
+        <Footer/>
       </div>
     );
   }

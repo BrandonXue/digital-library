@@ -1,7 +1,13 @@
 .collage {
+    position: relative;
+
     display: grid;
-    grid-template-rows: 19vw 27vw 28vw 26vw;
-    grid-template-columns: 16vw 22vw 23vw 20vw 19vw;
+    grid-template-rows: 19fr 27fr 28fr 26fr;
+    grid-template-columns: 15vw 21vw 22vw 19vw 18vw;
+
     margin-top: 10vw;
-    justify-content: center;
+
+    width: 78vw;
+    max-width: 100%;
+    height: 100vw;
 }
