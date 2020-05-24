@@ -1,11 +1,7 @@
 .collage {
     display: grid;
-    grid-template-rows: 19% 27% 28% 26%;
-    grid-template-columns: 16% 22% 23% 20% 19%;
-    margin-top: 8rem;
-    height: 80vw;
-    width: 80vw;
-
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-template-rows: 19vw 27vw 28vw 26vw;
+    grid-template-columns: 16vw 22vw 23vw 20vw 19vw;
+    margin-top: 10vw;
+    justify-content: center;
 }
