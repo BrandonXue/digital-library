@@ -73,7 +73,7 @@ class App extends React.Component {
       },
     ];
 
-    return (
+    return ( //Brandon
       <div className="App">
         <Header className='Header'/>
           <Collage className='Mosaic' media={media} music={musicList} written={writtenList}/>
