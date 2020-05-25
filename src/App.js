@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/headerComponent/Header';
 import Footer from './components/footerComponent/Footer';
-import Collage from './components/bookcaseComponent/Collage';
+import Collage from './components/collageComponent/Collage';
 
 class App extends React.Component {
   constructor(props) {
@@ -76,7 +76,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header/>
-        <Collage media={media} music={musicList} written={writtenList}/>
+        <Collage media={media} music={musicList} written={writtenList} test="hello"/>
         <Footer/>
       </div>
     );

@@ -2,10 +2,6 @@ import React from 'react';
 import './CollageItem.css';
 
 class CollageItem extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
 
     render() {
         let mediaItem = this.props.mediaItem;

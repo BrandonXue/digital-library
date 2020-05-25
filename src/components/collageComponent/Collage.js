@@ -1,5 +1,4 @@
 import React from 'react';
-import Book from './CollageItem.js';
 import './Collage.css';
 import CollageItem from './CollageItem.js';
 
@@ -14,12 +13,10 @@ class Collage extends React.Component {
         };
     }
 
-    renderTile(tileNum, width, height, tileColor, mediaItem, mediaType) {
+    renderTile(tileNum, tileColor, mediaItem, mediaType) {
         return (
             <CollageItem 
                 tileNum={tileNum}
-                width={width}
-                height={height}
                 tileColor={tileColor}
                 mediaItem={mediaItem}
                 mediaType={mediaType}
@@ -34,13 +31,13 @@ class Collage extends React.Component {
 
         return ( 
             <div className="collage">
-                {this.renderTile(1, "5.85em", "6.67em", "#464866", testItem, testType)}
-                {this.renderTile(2, "5.85em", "6.67em", "#AAABB8", testItem2, testType)}
-                {this.renderTile(3, "5.85em", "6.67em", "#29648A", testItem2, testType)}
-                {this.renderTile(4, "5.85em", "6.67em", "#2E9CCA", testItem2, testType)}
-                {this.renderTile(5, "5.85em", "6.67em", "#AAABB8", testItem2, testType)}
-                {this.renderTile(6, "5.85em", "6.67em", "#29648A", testItem2, testType)}
-                {this.renderTile(7, "5.85em", "6.67em", "#464866", testItem2, testType)}
+                {this.renderTile(1, "#464866", testItem, testType)}
+                {this.renderTile(2, "#AAABB8", testItem2, testType)}
+                {this.renderTile(3, "#29648A", testItem2, testType)}
+                {this.renderTile(4, "#2E9CCA", testItem2, testType)}
+                {this.renderTile(5, "#AAABB8", testItem2, testType)}
+                {this.renderTile(6, "#29648A", testItem2, testType)}
+                {this.renderTile(7, "#464866", testItem2, testType)}
             </div>
             
         );
