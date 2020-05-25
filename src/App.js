@@ -76,7 +76,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header/>
-        <Collage media={media} music={musicList} written={writtenList} test="hello"/>
+        <Collage media={media} music={musicList} written={writtenList}/>
         <Footer/>
       </div>
     );

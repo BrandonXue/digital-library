@@ -7,10 +7,10 @@ class CollageItem extends React.Component {
         let mediaItem = this.props.mediaItem;
         let type = this.props.mediaType;
         let title = "Unknown title", creator = "Unknown creator";
-        if (type == "music") {
+        if (type === "music") {
             title = mediaItem.title;
             creator = mediaItem.artist;
-        } else if (type == "written") {
+        } else if (type === "written") {
             title = mediaItem.title;
             creator = mediaItem.author;
         }
