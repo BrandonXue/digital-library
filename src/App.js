@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/headerComponent/Header';
 import Footer from './components/footerComponent/Footer';
 import Collage from './components/collageComponent/Collage';
+import Collections from './components/collectionsComponent/Collections';
 
 class App extends React.Component {
   constructor(props) {
@@ -77,6 +78,7 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <Collage media={media} music={musicList} written={writtenList}/>
+        <Collections/>
         <Footer/>
       </div>
     );

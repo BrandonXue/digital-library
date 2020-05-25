@@ -1,0 +1,21 @@
+.collections {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+
+    width: 78vw;
+}
+
+.collectionsColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* flex-direction: row; */
+/* flex-grow: 1; */
+/* justify-content: center; */
