@@ -1,15 +1,22 @@
 .collageItem {
-    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    color: #FFFFFF;
     box-shadow: 0px 0px 8em rgba(0, 0, 0, 0.5) inset,
-                0px 0px 8em rgba(0, 0, 0, .8);
-    align-self: stretch;
+                0px 0px 8em rgba(0, 0, 0, 0.8);
+
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
 }
 
 .collageItem:hover {
     color: rgb(180, 244, 255);
+    height: calc(100% - 1rem);
+    width: calc(100% - 1rem);
 }
 
 .image {
