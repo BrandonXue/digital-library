@@ -79,10 +79,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <ParallaxHeader/>
-        <ParallaxContainer top={"25vw"} relRate={0.5}>
-        </ParallaxContainer>
         <Collage media={media} music={musicList} written={writtenList}/>
         <Collections/>
+        <ParallaxContainer top={"25vw"} relRate={0.5}>
+        </ParallaxContainer>
         <Footer/>
       </div>
     );
