@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from './components/headerComponent/Header';
+//import Header from './components/headerComponent/Header';
+import ParallaxHeader from './components/parallaxHeaderComponent/ParallaxHeader';
 import Footer from './components/footerComponent/Footer';
 import Collage from './components/collageComponent/Collage';
 import Collections from './components/collectionsComponent/Collections';
@@ -76,7 +77,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Header/>
+        <ParallaxHeader/>
         <Collage media={media} music={musicList} written={writtenList}/>
         <Collections/>
         <Footer/>

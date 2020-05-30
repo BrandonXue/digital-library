@@ -1,0 +1,27 @@
+.parallaxImage{
+    height: 50vw;
+    width: 100vw;
+}  
+
+.header {
+    background: rgba(34,34,34,0.60);
+    color: white;
+    left: 50%;
+    top: 25vw;
+    position: absolute;
+    padding: 20px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(3px);
+}
+
+.childElem {
+    margin: 1vw;
+}
+
+.appLogo {
+    margin: 1vw;
+    width: 5vw;
+    height: auto;
+}
