@@ -1,0 +1,12 @@
+.parallaxContainer {
+    background-color: purple;
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vw;
+}
