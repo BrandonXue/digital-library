@@ -1,7 +1,7 @@
 .App {
   display: grid;
   justify-items: center;
-
+  height: '100%';
   text-align: center;
   position: relative;
   align-content: center;

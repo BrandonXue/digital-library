@@ -6,8 +6,23 @@ import Footer from './components/footerComponent/Footer';
 import Collage from './components/collageComponent/Collage';
 import Collections from './components/collectionsComponent/Collections';
 import ParallaxContainer from './components/parallaxComponent/ParallaxContainer';
+import Toolbar from './components/toolbarComponent/Toolbar';
+import SideDrawer from './components/sideDrawerComponent/SideDrawer';
+import Backdrop from './components/backdropComponent/Backdrop';
 
 class App extends React.Component {
+  state = {
+    sideDrawerOpen: false
+  };
+
+drawerTogggleClickHandler = () => {
+  this.setState((prevState) => {
+    return {sideDrawerOpen: !prevState.sideDrawerOpen};
+  });
+};
+
+
+
   constructor(props) {
     super(props);
     this.state = { // Test data
@@ -39,6 +54,15 @@ class App extends React.Component {
   }
 
   render() {
+    let sideDrawer;
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      sideDrawer = <SideDrawer />;
+      backdrop = <Backdrop />;
+    }
+
+
     let musicList = this.state.music;
     let writtenList = this.state.written;
     let media = [
@@ -78,6 +102,9 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <Toolbar drawerClickHandler={this.drawerTogggleClickHandler}/>
+        {sideDrawer}
+        {backdrop}
         <ParallaxHeader/>
         <Collage media={media} music={musicList} written={writtenList}/>
         <Collections/>
@@ -91,3 +118,48 @@ class App extends React.Component {
 }
 
 export default App;
+
+//<SideDrawer/>
+//<Backdrop/>
+
+/*
+
+
+    let musicList = this.state.music;
+    let writtenList = this.state.written;
+    let media = [
+      {
+        title: "title1",
+        author: "author1",
+      },
+      {
+        title: "title2",
+        author: "author2",
+      },
+      {
+        title: "title3",
+        author: "author3",
+      },
+      {
+        title: "title4",
+        author: "author4",
+      },
+      {
+        title: "title5",
+        author: "author5",
+      },
+      {
+        title: "title6",
+        author: "author6",
+      },
+      {
+        title: "title7",
+        author: "author7",
+      },
+      {
+        title: "title8",
+        author: "author8",
+      },
+    ];
+
+*/
