@@ -8,13 +8,11 @@ class ParallaxHeader extends React.Component {
     render() {
         return(
             <div className = "parallaxHeader">
-              <Parallax bgImage = {libraryImage} className = "parallaxImage" strength = {-500}>
-                  <div className = "header">
-                    <h1 className = "childElem"> Digital </h1>
-                    <h1 className = "childElem"> Archive </h1>
-                    <img className = "appLogo" src={logo} alt="Digital Library Logo"/>
-                  </div>
-              </Parallax>
+              <Parallax bgImage = {libraryImage} className = "parallaxImage" strength = {-500}></Parallax>
+              <div className = "header">
+                <h1 className = "childElem"> Digital Archive </h1>
+                <img className = "appLogo" src={logo} alt="Digital Library Logo"/>
+              </div>
             </div>
         );
     }
